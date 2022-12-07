@@ -1,0 +1,84 @@
+h1, h2, h3, h4, p{
+    color: white;
+}
+
+.website-header{
+    padding: 20px 0px;
+}
+
+.header-left-side{
+    text-align: start;
+}
+
+.header-right-side{
+    text-align: end;
+}
+
+.project-image-class{
+    border-radius: 10px;
+}
+
+.contact-section{
+    background-color: #242424;
+}
+
+.contact-option{
+    border-bottom: 1px solid yellow;
+    text-align: center;
+}
+
+.skills-option{
+    border-bottom: 1px solid royalblue;
+    text-align: center;
+}
+
+.projects-option{
+    border-bottom: 1px solid orangered;
+    text-align: center;
+}
+
+.github-logo{
+    margin: 0px 5px;
+    color: white;
+}
+
+.linkedin-logo{
+    margin: 0px 5px;
+    color: white;
+}
+
+.just-below-header{
+    margin-top: 5%;
+    margin-bottom: 10%;
+    border-bottom: 1px solid white;
+}
+
+.contact-details{
+    border-bottom: 1px solid white;
+}
+
+.contact-section{
+    background-color: #242424;
+}
+
+.submitButton{
+    padding: 10px 50px;
+}
+
+.darkmode-toggle{
+    display: none;
+}
+
+.darkmode-toggle{
+    background-color: black;
+}
+
+.darkmode-toggle--white{
+    background-color: black;
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+      background-color: olive;
+    }
+  }

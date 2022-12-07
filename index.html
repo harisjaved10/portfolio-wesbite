@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+
+    <link rel="stylesheet" href="styling.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
+    <script>
+
+        function addDarkmodeWidget() {
+            new Darkmode().showWidget();
+        }
+        window.addEventListener('load', addDarkmodeWidget);
+
+        $(document).ready(function () {
+
+            $(".github-logo").click(function () {
+                var url = 'https://github.com/harisjaved10';
+                window.location.href = url;
+            });
+
+            $(".linkedin-logo").click(function () {
+                var url = 'https://www.linkedin.com/in/harisjaved24/';
+                window.location.href = url;
+            });
+
+            $(".darkmode-toggle").click(function () {
+                $("h1,h2,h3,h4,p").css('color', 'black');
+            });
+
+            $(".darkmode-toggle").css('display','none');
+
+            $(".contact-option").click(function () {
+                $('html,body').animate({
+                    scrollTop: $(".contact-section").offset().top
+                },
+                    'slow');
+
+                $('.contact-section').css({
+                    // position: 'fixed',
+                    top: 0,
+                    right: 0,
+                    bottom: 0,
+                    left: 0,
+                    zIndex: 999
+                });
+            });
+
+            $(".skills-option").click(function () {
+                $('html,body').animate({
+                    scrollTop: $(".skills-section").offset().top
+                },
+                    'slow');
+            });
+
+            $(".projects-option").click(function () {
+                $('html,body').animate({
+                    scrollTop: $(".projects-section").offset().top
+                },
+                    'slow');
+            });
+        });
+
+    </script>
+
+</head>
+
+<body>
+
+    <div class="container-fluid website-header">
+        <div class="row">
+            <div class="col-lg-6 header-left-side">
+                <h3 style="font-family: 'FontAwesome'; color: darkkhaki;">Welcome to My Portfolio Website</h3>
+            </div>
+            <div class="col-lg-6 header-right-side">
+                <i class="fa-brands fa-github fa-3x github-logo"></i>
+                <i class="fa-brands fa-linkedin fa-3x linkedin-logo"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="container just-below-header">
+
+        <div class="row">
+            <div class="col-lg-6" style="padding: 120px 20px; padding-left: 0px;">
+                <div class="intro-div-header" style="text-align: center">
+                    <h1>Hey. My name is <span>Haris Javed</span></h1>
+                    <h4>I am Software Engineer by Profession</h3>
+                </div>
+
+                <div class="intro-div-body" style="text-align: center; margin-top: 10%; margin-bottom: 10%;">
+                    <p><em>Based in Pakistan <span>🇵🇰</span> I am a Front-end UI Developer passionate about building
+                            accessible websites that users would love to use.</em></p>
+                </div>
+            </div>
+            <!--END OF FIRST COLUMN-->
+            <div class="col-lg-6">
+                <img src="./Images/front-1.jpg" width="100%" height="100%">
+            </div>
+            <!--END OF SECOND COLUMN-->
+        </div>
+
+        <div class="row" style="margin-top: 10%; margin-bottom: 1%;">
+            <div class="col-lg-4 contact-option">
+                <p>CONTACT ME</p>
+            </div>
+            <div class="col-lg-4 projects-option">
+                <p>VIEW MY PROJECTS</p>
+            </div>
+            <div class="col-lg-4 skills-option">
+                <p>SEE MY SKILLS</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container intro-section">
+        <p style="color: black">
+            <em>I have done my Bachelor's in Computer Sciences. Have done profound projects in the domain of Web Development, Android App Development, Machine Learning, and Artificial Intelligence. A list of these projects are mentioned in my Resume.</em>
+        </p>
+    </div>
+
+    <div class="container skills-section" style="margin-top: 10%; margin-bottom: 10%;">
+
+        <div style="color: black; margin-bottom: 5%; border-bottom: 1px solid black;">
+            <h1 style="color: black; margin-bottom: 8px;">Skills</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <h1>HTML</h1>
+                <p>5 months Experience</p>
+            </div>
+            <div class="col-lg-4">
+                <h1>CSS</h1>
+                <p>5 months Experience</p>
+            </div>
+            <div class="col-lg-4">
+                <h1>JAVASCRIPT</h1>
+                <p>4 months Experience</p>
+            </div>
+        </div>
+
+        <div class="row" style="text-align: end; margin-right: 20px;">
+            <div class="col-lg-4">
+                <h1>JQuery</h1>
+                <p>4 months Experience</p>
+            </div>
+            <div class="col-lg-4">
+                <h1>Angular</h1>
+                <p>0 months Experience</p>
+            </div>
+            <div class="col-lg-4">
+                <h1>React</h1>
+                <p>0 months Experience</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container projects-section" style="margin-top: 10%; margin-bottom: 10%;">
+
+        <div style="color: black; margin-bottom: 5%; border-bottom: 1px solid black;">
+            <h1 style="color: black; margin-bottom: 8px;">Projects</h1>
+        </div>
+
+        <div class="row" style="text-align: center;">
+            <div class="col-lg-6">
+                <img class="project-image-class" src="./Images/P2.png" width="100%">
+                <h4 style="margin-top: 2%;">Social Interaction Website</h4>
+                <p>HTML, CSS, Bootstrap</p>
+            </div>
+            <div class="col-lg-6">
+                <img class="project-image-class" src="./Images/spaceWorld.png" width="100%">
+                <h4 style="margin-top: 2%;">Space World</h4>
+                <p>HTML, CSS</p>
+            </div>
+        </div>
+
+        <div class="row" style="text-align: center;">
+            <div class="col-lg-6">
+                <video width="100%" autoplay="autoplay" controls muted>
+                    <source src="./Videos/easyBank.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h4 style="margin-top: 2%;">Banking Website</h4>
+                <p>HTML, CSS, Bootstrap, Javascript</p>
+            </div>
+            <div class="col-lg-6">
+                <video width="100%" autoplay="autoplay" controls muted>
+                    <source src="./Videos/insurePage.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h4 style="margin-top: 2%;">Insurance Website</h4>
+                <p>HTML, CSS, JQuery, Javascript</p>
+            </div>
+        </div>
+
+        <div class="row" style="text-align: center;">
+            <div class="col-lg-6">
+                <video width="100%" autoplay="autoplay" controls muted>
+                    <source src="./Videos/movieSite.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h4 style="margin-top: 2%;">Movies Website</h4>
+                <p>HTML, CSS</p>
+            </div>
+            <div class="col-lg-6">
+                <video width="100%" autoplay="autoplay" controls muted>
+                    <source src="./Videos/sunnySide.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h4 style="margin-top: 2%;">SunnySide Website</h4>
+                <p>HTML, CSS, JQuery, Javascript</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="container-fluid contact-section">
+        <div class="row">
+            <div class="col-lg-6" style="background-color: #242424; padding: 80px; padding-bottom: 0px;">
+                <h2>Contact</h2>
+                <p>
+                    As far as my working domain is concerned, I would love to help you. Please fill in the form, and
+                    I'll get back to you as soon as possible.
+                </p>
+            </div>
+            <div class="col-lg-6" style="background-color: #242424; padding: 80px; padding-bottom: 0px;">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="contactInputName" placeholder="Your Name">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your Name with anyone
+                            else.</small>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="contactInputEmail" aria-describedby="emailHelp"
+                            placeholder="Your Email Address">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your Email with anyone
+                            else.</small>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="contactInputMessage"
+                            placeholder="Enter Your Message">
+                    </div>
+                    <button type="submit" class="btn submitButton"
+                        style="color: white; background-color: green;">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="row" style="text-align: center;">
+            <div class="col-lg-6" style="background-color: #242424; text-align: end; padding: 30px 10px;">
+                <p>Github</p>
+                <i class="fa-brands fa-github fa-3x github-logo" style="color: white;"></i>
+            </div>
+            <div class="col-lg-6" style="background-color: #242424; text-align: start; padding: 30px 10px;">
+                <p>LinkedIn</p>
+                <i class="fa-brands fa-linkedin fa-3x linkedin-logo" style="color: white;"></i>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <p> © Made By Haris Javed</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
